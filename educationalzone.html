@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <title>JavaScript Sandbox</title>
+    <link rel="nutrition" href="Nutrition.html" />
+    <link rel="index" href="index.html" />
+    <link rel="stylesheet" href="styless.css" />
+    <link rel="footer" href="footer.html" />
+  </head>
+  <body>
+    <h1 class="care-link">CareLink</h1>
+    <h2 class="hook">Food health Articles & Guidances</h2>
+    <nav class="buttonS">
+      <button class="button"><a href="index.html">Home!</a></button>
+      <button class="button">
+        <a href="Nutrition.html">Nutrition Advisor!</a>
+      </button>
+      <button class="button">
+        <a href="educationalzone.html">Educational Zone!</a>
+      </button>
+      <button class="button"><a href="index.html#AboutUs">About us!</a></button>
+    </nav>
+    <div class="container">
+      <div class="article-section" id="preservatives-processed-food">
+        <h2 class="section-title">
+          Dangers of Preservatives and Processed Food
+        </h2>
+        <p>
+          Processed foods often contain a myriad of additives, including
+          preservatives, artificial colors, and flavor enhancers, designed to
+          extend shelf life and enhance taste. While convenient, the regular
+          consumption of these foods can pose significant health risks.
+        </p>
+        <p>
+          Preservatives like nitrates, nitrites, and BHA/BHT have been linked to
+          various health issues. Nitrates and nitrites, commonly found in cured
+          meats, can form potentially carcinogenic compounds in the body. BHA
+          and BHT, used to prevent spoilage in fats and oils, have raised
+          concerns regarding their potential to interfere with endocrine
+          function and contribute to tumor growth in animal studies.
+        </p>
+        <div class="hidden-content">
+          <p>
+            Regular consumption of processed foods is associated with an
+            increased risk of obesity, heart disease, diabetes, and certain
+            types of cancer. They often lack the satiety provided by whole
+            foods, leading to overeating and a vicious cycle of unhealthy eating
+            habits.
+          </p>
+        </div>
+        <button
+          class="read-more-btn"
+          onclick="toggleContent('preservatives-processed-food')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="article-section" id="gmo-crops-health-effects">
+        <h2 class="section-title">
+          Genetically Modified Crops and Their Health Effects
+        </h2>
+        <p>
+          Genetically modified organisms (GMOs), particularly crops, are a
+          contentious topic. These crops have had their DNA altered using
+          genetic engineering techniques, often to introduce traits like pest
+          resistance or herbicide tolerance...
+        </p>
+        <p>
+          One of the primary concerns revolves around potential allergenic
+          reactions. New proteins introduced into GMOs could theoretically
+          trigger allergies in susceptible individuals...
+        </p>
+        <div class="hidden-content">
+          <p>Research on the long-term health effects of GMOs is ongoing...</p>
+          <p>
+            Environmental concerns include the potential for gene flow to wild
+            relatives...
+          </p>
+        </div>
+        <button
+          class="read-more-btn"
+          onclick="toggleContent('gmo-crops-health-effects')"
+        >
+          Read More
+        </button>
+      </div>
+
+      <div class="article-section" id="recognize-safe-whole-foods">
+        <h2 class="section-title">How to Recognize Safe, Whole Foods</h2>
+        <p>
+          Embracing a diet rich in whole foods is fundamental for optimal
+          health...
+        </p>
+        <ul>
+          <li>
+            <strong>Read Ingredients Lists:</strong> The shorter the ingredient
+            list, the better...
+          </li>
+          <li>
+            <strong>Shop the Periphery of the Grocery Store:</strong> The outer
+            aisles...
+          </li>
+          <li>
+            <strong>Choose Fresh Over Packaged:</strong> Opt for fresh fruits,
+            vegetables...
+          </li>
+        </ul>
+        <div class="hidden-content">
+          <ul>
+            <li>
+              <strong>Look for Certifications:</strong> "Organic", "Grass-fed",
+              etc.
+            </li>
+            <li>
+              <strong>Understand Food Labels:</strong> Focus on sugar, sodium,
+              and fats.
+            </li>
+            <li>
+              <strong>Embrace Cooking at Home:</strong> Gives you control over
+              ingredients.
+            </li>
+            <li>
+              <strong>Source Locally and Seasonally:</strong> Buy from farmers'
+              markets when possible.
+            </li>
+          </ul>
+        </div>
+        <button
+          class="read-more-btn"
+          onclick="toggleContent('recognize-safe-whole-foods')"
+        >
+          Read More
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function toggleContent(sectionId) {
+        const section = document.getElementById(sectionId);
+        const hiddenContent = section.querySelector(".hidden-content");
+        const button = section.querySelector(".read-more-btn");
+
+        if (
+          hiddenContent.style.display === "none" ||
+          hiddenContent.style.display === ""
+        ) {
+          hiddenContent.style.display = "block";
+          button.textContent = "Read Less";
+        } else {
+          hiddenContent.style.display = "none";
+          button.textContent = "Read More";
+        }
+      }
+    </script>
+
+    <p class="bold">
+      NOW THAT WE HAVE SEEN THE DANGERS OF PRESERVATIVES AND GENETICALLY
+      MODIFIED CROPS, LET'S LOOK AT HOW TEHNOLOGY CAN MAKE NATURAL FOOD MORE
+      ACCESSIBLE
+    </p>
+    <div>
+      <ol class="first-paragraph">
+        <li>
+          Digital technology can transform food system in three ways. First, it
+          can expand farmers’ access to capital and resources. With the touch of
+          a button on their phone, farmers can now rent machines—like
+          tractors—that require significant capital to buy
+        </li>
+        <br />
+        <li>
+          Digital technology can also disrupt value chains through economies of
+          scale, allowing smaller players to be integrated into the value chain.
+          For example, e-commerce platforms can link producers directly to
+          consumers, relaxing the constraint that producers need to be a certain
+          size to reach customers.
+        </li>
+        <br />
+        <li>
+          Finally, digital technology can disrupt the management of natural
+          resources through precision tools, helping to boost food production
+          sustainably. Digital technologies can make information on land, soils
+          and other resources more widely available, allowing farmers to apply
+          inputs like fertilizer and water in a more precise manner.
+        </li>
+      </ol>
+    </div>
+    <h2 class="first-h2">Here are real life success stories</h2>
+    <div>
+      <ol class="second-paragraph">
+        <li>
+          Twiga Foods, a Kenyan company founded in 2014, uses mobile technology
+          to connect smallholder farmers directly with urban vendors, making
+          fresh, natural produce more accessible and affordable. Through a
+          simple app, vendors order fruits and vegetables, which Twiga collects
+          from farms and delivers efficiently using data-driven logistics. This
+          system reduces food waste, cuts out costly middlemen, and ensures
+          farmers are paid quickly via mobile money. As a result, consumers get
+          fresher food at lower prices, and farmers earn more, making natural
+          food both accessible and sustainable.
+        </li>
+        <br />
+        <li>
+          Guests at LSU AgCenter’s annual wheat and oat field day in April got
+          the chance to attend a drone presentation. Discussion came up about
+          how drones can be used to track the health of crops, especially in
+          observation plots. “One of the things we’re thinking about in using
+          drone data is that we have 600 or so plots that are observation plots
+          and have DNA for all of them, which can be expensive. We wanted to
+          learn if we could use drone information to link those observations
+          together without the DNA data,” plant geneticist Noah DeWitt.
+        </li>
+        <br />
+        <li>
+          Remote work is not something farmers have been able to consider in the
+          past. But some technology can make it easier for farmers to work away
+          from their land, whether that’s in their home next to their family, or
+          while traveling. An app developed by Missouri farmer Nathan Holmes,
+          Pump Trakr, works to manage irrigation through an on-farm
+          communication tool. Farmers sign up to a subscription service to have
+          real-time irrigation monitored and logged into a record.
+        </li>
+      </ol>
+    </div>
+
+    <!-- Main container for quiz  -->
+    <div class="quiz-container">
+      <h1>Health Quiz</h1>
+      <h2>Let's Test Your Knowledge!!</h2>
+      <!-- Question and answer section -->
+      <div id="quiz">
+        <div id="question">Question will appear here</div>
+        <div id="answer-buttons" class="btn-grid"></div>
+        <!-- <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button> -->
+      </div>
+      <!-- Final score section -->
+      <div id="score-container" class="hidden">
+        <h2>Your score</h2>
+        <p id="final-score"></p>
+        <button id="restart-btn" class="btn">Restart Quiz</button>
+      </div>
+    </div>
+    <!-- Link to Javascript file -->
+    <script src="quiz.js"></script>
+
+    <!--Random informations-->
+
+    <section>
+      <div id="app"></div>
+      <h2>Random Nutrition Tips</h2>
+      <button id="showFact">Nutrition Fact</button>
+      <p id="random-message-display"></p>
+    </section>
+    <script src="./facts.js" type="module"></script>
+    <div class="foot">
+      <!-- This is the footer  -->
+      <footer class="foot">
+        <p>Contact us at:</p>
+        <ul>
+          <li>okonkwoangel444@gmail.com</li>
+          <li>helenapizzato@gmail.com</li>
+          <li>me9001513@gmail.com</li>
+          <li>sassi.asma.8b4@gmail.com</li>
+        </ul>
+        <ul>
+          <a href="footer.html#privacy">Privacy Policy</a>
+        </ul>
+        <ul>
+          <a href="footer.html#terms">Terms and Conditions</a>
+        </ul>
+        <ul>
+          <a href="footer.html#security">Data Security & User Consent Policy</a>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
